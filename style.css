@@ -1,0 +1,137 @@
+/* Resetting default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Applying Roboto font to the entire body */
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Updated body background color */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    min-height: 100vh; /* Ensure the body fills the viewport height */
+}
+
+/* Header styles */
+header {
+    background-color: #007bff; /* Blue color for the header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Applying Roboto font to the header */
+}
+
+/* Navigation styles */
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+header nav ul li a:hover {
+    color: #ff7b00; /* Orange color on hover */
+}
+
+/* Main content styles */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three column layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    background-color: #fff; /* Default background color */
+    border-top: 1px solid #ddd; /* Add border to the top of each section */
+    padding: 20px; /* Add padding to sections */
+    text-align: center; /* Center-align text */
+    border-radius: 15px; /* Rounded corners */
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 0.4s ease-in-out forwards; /* Fade-in animation with a duration of 0.4 seconds */
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Specific section styles */
+#about {
+    /* Targeting the about section */
+    background-color: #ff9999; /* Updated background color for the about section */
+}
+
+#projects {
+    /* Targeting the projects section */
+    background-color: #28a745; /* Green color for the projects section */
+    color: #fff; /* Changing text color to white */
+}
+
+#contact {
+    /* Targeting the contact section */
+    background-color: #ffc107; /* Yellow color for the contact section */
+    border-top: 1px solid #ddd; /* Add border to merge with footer */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Border between contact and footer */
+}
+
+/* Reduce width of input boxes in contact section */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 300px; /* Set maximum width if necessary */
+    margin: 0 auto; /* Center-align input boxes */
+}
+
+/* Social links in about section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #333; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add space between links */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.social-links a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start from transparent */
+    }
+    to {
+        opacity: 1; /* Fade to fully visible */
+    }
+}

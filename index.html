@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="path_to_your_image" alt="Profile Picture">
+            <p>This is where you can introduce yourself.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/syeda-sadia-yasmin-96b295285/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/syasminire23" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Description of the project goes here.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
