@@ -14,9 +14,6 @@ body {
     font-family: 'Roboto', sans-serif; /* Applying Roboto font to the entire body */
     line-height: 1.6;
     background-color: #152434; /* Updated body background color */
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
-    min-height: 100vh; /* Ensure the body fills the viewport height */
 }
 
 /* Header styles */
@@ -50,9 +47,6 @@ header nav ul li a:hover {
 
 /* Main content styles */
 main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three column layout */
-    gap: 20px;
     padding: 20px;
 }
 
@@ -65,6 +59,7 @@ section {
     border-radius: 15px; /* Rounded corners */
     opacity: 0; /* Initially transparent */
     animation: fadeIn 0.4s ease-in-out forwards; /* Fade-in animation with a duration of 0.4 seconds */
+    margin-bottom: 20px; /* Add margin between sections */
 }
 
 h1 {
@@ -89,7 +84,6 @@ p {
     /* Targeting the about section */
     background-color: #6ae470bd; /* Updated background color for the about section */
     padding-bottom: 10px; /* Added padding to the bottom */
-    
 }
 
 #about .about-content img {
@@ -146,6 +140,17 @@ footer {
 
 .social-links a:hover {
     color: #007bff; /* Blue color on hover */
+}
+
+/* Style for project link */
+#projects a {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+#projects a:hover {
+    color: #ff7b00; /* Orange color on hover */
 }
 
 /* Fade-in animation */
