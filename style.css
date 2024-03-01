@@ -3,7 +3,6 @@ body,
 h1,
 h2,
 h3,
-p,
 ul,
 li {
     margin: 0;
@@ -14,7 +13,7 @@ li {
 body {
     font-family: 'Roboto', sans-serif; /* Applying Roboto font to the entire body */
     line-height: 1.6;
-    background-color: #f8f9fa; /* Updated body background color */
+    background-color: #152434; /* Updated body background color */
     display: grid; /* Use CSS Grid for layout */
     grid-template-rows: auto 1fr auto; /* Header, main content, footer */
     min-height: 100vh; /* Ensure the body fills the viewport height */
@@ -22,7 +21,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #007bff; /* Blue color for the header */
+    background-color: #1b72d0; /* Blue color for the header */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -42,7 +41,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for color change */
+    transition: color 0.7s; /* Smooth transition for color change */
 }
 
 header nav ul li a:hover {
@@ -68,26 +67,49 @@ section {
     animation: fadeIn 0.4s ease-in-out forwards; /* Fade-in animation with a duration of 0.4 seconds */
 }
 
+h1 {
+    color: #96d497e2; /* Red color for h1 */
+}
+
 h2 {
     margin-bottom: 10px;
+    color: #e41c97; /* Green color for h2 */
+}
+
+h3 {
+    color: #c8ff00; /* Blue color for h3 */
+}
+
+p {
+    margin: 10px 0;
 }
 
 /* Specific section styles */
 #about {
     /* Targeting the about section */
-    background-color: #ff9999; /* Updated background color for the about section */
+    background-color: #6ae470bd; /* Updated background color for the about section */
+    padding-bottom: 10px; /* Added padding to the bottom */
+    
+}
+
+#about .about-content img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Ensure aspect ratio is maintained */
+    display: block; /* Make sure the image does not affect surrounding elements */
+    margin: 0 auto; /* Center-align the image */
+    max-height: 200px; /* Set maximum height for the image */
 }
 
 #projects {
     /* Targeting the projects section */
-    background-color: #28a745; /* Green color for the projects section */
+    background-color: #093711; /* Green color for the projects section */
     color: #fff; /* Changing text color to white */
 }
 
 #contact {
     /* Targeting the contact section */
-    background-color: #ffc107; /* Yellow color for the contact section */
-    border-top: 1px solid #ddd; /* Add border to merge with footer */
+    background-color: #c1930b; /* Yellow color for the contact section */
+    border-top: 2px solid #ddd; /* Add border to merge with footer */
 }
 
 /* Footer styles */
@@ -96,7 +118,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    border-top: 1px solid #ddd; /* Border between contact and footer */
+    border-top: 2px solid #ddd; /* Border between contact and footer */
 }
 
 /* Reduce width of input boxes in contact section */
@@ -133,5 +155,30 @@ footer {
     }
     to {
         opacity: 1; /* Fade to fully visible */
+    }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    /* Adjust styles for tablets */
+    /* Example: Change background color */
+    #about {
+        background-color: #6ae470; /* Change to a lighter green */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for small tablets and large smartphones */
+    /* Example: Change background color */
+    #about {
+        background-color: #7ec9a7; /* Change to a turquoise color */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for small smartphones */
+    /* Example: Change background color */
+    #about {
+        background-color: #9ce2e7; /* Change to a light blue */
     }
 }
