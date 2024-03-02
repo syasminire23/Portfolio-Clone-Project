@@ -63,12 +63,12 @@ section {
 }
 
 h1 {
-    color: #96d497e2; /* Red color for h1 */
+    color: #96d497; /* Green color for h1 */
 }
 
 h2 {
     margin-bottom: 10px;
-    color: #e41c97; /* Green color for h2 */
+    color: #e41c97; /* Red color for h2 */
 }
 
 h3 {
@@ -82,7 +82,7 @@ p {
 /* Specific section styles */
 #about {
     /* Targeting the about section */
-    background-color: #6ae470bd; /* Updated background color for the about section */
+    background-color: #6ae470; /* Updated background color for the about section */
     padding-bottom: 10px; /* Added padding to the bottom */
 }
 
